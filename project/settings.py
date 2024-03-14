@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'app',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -177,3 +178,12 @@ CELERY_RESULT_BACKEND = 'redis://localhost:6379'
 CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+CELERY_TIMEZONE = 'Europe/Moscow'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'balaklava.faceit1@mail.ru'
+EMAIL_HOST_PASSWORD = 'balaklava488123'
+EMAIL_HOST_TLS = True
+EMAIL_HOST_SSL = False
+EMAIL_TIMEOUT = 60
